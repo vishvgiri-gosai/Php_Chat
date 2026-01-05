@@ -14,9 +14,9 @@ continueBtn.onclick = () => {
             if (xhr.status === 200) {
                 let data = xhr.response; 
                 if (data === "success") {
-                   location.href = "./users.php";  // Ensure correct redirection
+                   location.href = "./users.php";  
                 } else {
-                    errorText.style.display = "block";  // Fix incorrect style access
+                    errorText.style.display = "block";  
                     errorText.textContent = data;
                 }
             }
